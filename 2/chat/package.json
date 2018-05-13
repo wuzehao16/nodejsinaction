@@ -1,0 +1,19 @@
+{
+  "name": "charrooms",
+  "version": "1.0.0",
+  "description": "chat server",
+  "main": "index.js",
+  "keywords": [],
+  "scripts":{
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "dependencies": {
+    "mime": "laster",
+    "socket.io": "lastet"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  },
+  "license": "ISC"
+}
