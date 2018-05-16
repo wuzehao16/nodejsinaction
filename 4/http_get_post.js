@@ -18,4 +18,17 @@ var server = http.createServer(function(req, res){
   }
 });
 
+function add(req,res) {
+  var item = '';
+  req.setEncoding('utf-8')
+  req.on('data', function (chunk) {
+    console.log(chunk)
+    item += chunk
+  })
+  req.on('end', function () {
+    items.push(item);
+    res.end('OK\n')
+  })
+}
+
 server.listen(3000);
